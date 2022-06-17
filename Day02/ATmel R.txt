@@ -1,0 +1,5 @@
+* ATmel 128 레지스터
+ : PORTA ~ PORTG, 각 8bit(48 + 5(PORTG) = 총 53bit)
+  - DDRx : 방향 설정 R(출력 설정 : 1 / 입력 설정 : 0)
+  - PORTx : 출력 R(5V 출력 : 1 / 0V 출력 : 0)
+  - PINx : 입력 R
