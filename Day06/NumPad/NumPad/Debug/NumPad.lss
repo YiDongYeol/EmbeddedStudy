@@ -1,0 +1,320 @@
+
+NumPad.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  00000198  0000020c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000198  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000220  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000250  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000028  00000000  00000000  00000290  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000855  00000000  00000000  000002b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007b6  00000000  00000000  00000b0d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002fc  00000000  00000000  000012c3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000044  00000000  00000000  000015c0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003c0  00000000  00000000  00001604  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000047  00000000  00000000  000019c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  00001a0b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 e9       	ldi	r30, 0x98	; 152
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 31       	cpi	r26, 0x14	; 20
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	4d d0       	rcall	.+154    	; 0x14e <main>
+  b4:	6f c0       	rjmp	.+222    	; 0x194 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <KeyScan>:
+//4 = r1
+//5 = r2
+//6 = r3
+int KeyScan(void)
+{
+	PORTA = 0x08;
+  b8:	88 e0       	ldi	r24, 0x08	; 8
+  ba:	8b bb       	out	0x1b, r24	; 27
+	if(PINA&0x01) return 1;
+  bc:	c8 99       	sbic	0x19, 0	; 25
+  be:	23 c0       	rjmp	.+70     	; 0x106 <KeyScan+0x4e>
+	if(PINA&0x02) return 2;
+  c0:	c9 99       	sbic	0x19, 1	; 25
+  c2:	24 c0       	rjmp	.+72     	; 0x10c <KeyScan+0x54>
+	if(PINA&0x04) return 3;
+  c4:	ca 99       	sbic	0x19, 2	; 25
+  c6:	25 c0       	rjmp	.+74     	; 0x112 <KeyScan+0x5a>
+	PORTA = 0x00;
+  c8:	1b ba       	out	0x1b, r1	; 27
+	
+	PORTA = 0x10;
+  ca:	80 e1       	ldi	r24, 0x10	; 16
+  cc:	8b bb       	out	0x1b, r24	; 27
+	if(PINA&0x01) return 4;
+  ce:	c8 99       	sbic	0x19, 0	; 25
+  d0:	23 c0       	rjmp	.+70     	; 0x118 <KeyScan+0x60>
+	if(PINA&0x02) return 5;
+  d2:	c9 99       	sbic	0x19, 1	; 25
+  d4:	24 c0       	rjmp	.+72     	; 0x11e <KeyScan+0x66>
+	if(PINA&0x04) return 6;
+  d6:	ca 99       	sbic	0x19, 2	; 25
+  d8:	25 c0       	rjmp	.+74     	; 0x124 <KeyScan+0x6c>
+	PORTA = 0x00;
+  da:	1b ba       	out	0x1b, r1	; 27
+	
+	PORTA = 0x20;
+  dc:	80 e2       	ldi	r24, 0x20	; 32
+  de:	8b bb       	out	0x1b, r24	; 27
+	if(PINA&0x01) return 7;
+  e0:	c8 99       	sbic	0x19, 0	; 25
+  e2:	23 c0       	rjmp	.+70     	; 0x12a <KeyScan+0x72>
+	if(PINA&0x02) return 8;
+  e4:	c9 99       	sbic	0x19, 1	; 25
+  e6:	24 c0       	rjmp	.+72     	; 0x130 <KeyScan+0x78>
+	if(PINA&0x04) return 9;
+  e8:	ca 99       	sbic	0x19, 2	; 25
+  ea:	25 c0       	rjmp	.+74     	; 0x136 <KeyScan+0x7e>
+	PORTA = 0x00;
+  ec:	1b ba       	out	0x1b, r1	; 27
+	
+	PORTA = 0x40;
+  ee:	80 e4       	ldi	r24, 0x40	; 64
+  f0:	8b bb       	out	0x1b, r24	; 27
+	if(PINA&0x01) return 0;
+  f2:	c8 99       	sbic	0x19, 0	; 25
+  f4:	23 c0       	rjmp	.+70     	; 0x13c <KeyScan+0x84>
+	if(PINA&0x02) return 0;
+  f6:	c9 99       	sbic	0x19, 1	; 25
+  f8:	24 c0       	rjmp	.+72     	; 0x142 <KeyScan+0x8a>
+	if(PINA&0x04) return 0;
+  fa:	ca 99       	sbic	0x19, 2	; 25
+  fc:	25 c0       	rjmp	.+74     	; 0x148 <KeyScan+0x90>
+	PORTA = 0x00;
+  fe:	1b ba       	out	0x1b, r1	; 27
+	
+	return 0;
+ 100:	80 e0       	ldi	r24, 0x00	; 0
+ 102:	90 e0       	ldi	r25, 0x00	; 0
+ 104:	08 95       	ret
+//5 = r2
+//6 = r3
+int KeyScan(void)
+{
+	PORTA = 0x08;
+	if(PINA&0x01) return 1;
+ 106:	81 e0       	ldi	r24, 0x01	; 1
+ 108:	90 e0       	ldi	r25, 0x00	; 0
+ 10a:	08 95       	ret
+	if(PINA&0x02) return 2;
+ 10c:	82 e0       	ldi	r24, 0x02	; 2
+ 10e:	90 e0       	ldi	r25, 0x00	; 0
+ 110:	08 95       	ret
+	if(PINA&0x04) return 3;
+ 112:	83 e0       	ldi	r24, 0x03	; 3
+ 114:	90 e0       	ldi	r25, 0x00	; 0
+ 116:	08 95       	ret
+	PORTA = 0x00;
+	
+	PORTA = 0x10;
+	if(PINA&0x01) return 4;
+ 118:	84 e0       	ldi	r24, 0x04	; 4
+ 11a:	90 e0       	ldi	r25, 0x00	; 0
+ 11c:	08 95       	ret
+	if(PINA&0x02) return 5;
+ 11e:	85 e0       	ldi	r24, 0x05	; 5
+ 120:	90 e0       	ldi	r25, 0x00	; 0
+ 122:	08 95       	ret
+	if(PINA&0x04) return 6;
+ 124:	86 e0       	ldi	r24, 0x06	; 6
+ 126:	90 e0       	ldi	r25, 0x00	; 0
+ 128:	08 95       	ret
+	PORTA = 0x00;
+	
+	PORTA = 0x20;
+	if(PINA&0x01) return 7;
+ 12a:	87 e0       	ldi	r24, 0x07	; 7
+ 12c:	90 e0       	ldi	r25, 0x00	; 0
+ 12e:	08 95       	ret
+	if(PINA&0x02) return 8;
+ 130:	88 e0       	ldi	r24, 0x08	; 8
+ 132:	90 e0       	ldi	r25, 0x00	; 0
+ 134:	08 95       	ret
+	if(PINA&0x04) return 9;
+ 136:	89 e0       	ldi	r24, 0x09	; 9
+ 138:	90 e0       	ldi	r25, 0x00	; 0
+ 13a:	08 95       	ret
+	PORTA = 0x00;
+	
+	PORTA = 0x40;
+	if(PINA&0x01) return 0;
+ 13c:	80 e0       	ldi	r24, 0x00	; 0
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	08 95       	ret
+	if(PINA&0x02) return 0;
+ 142:	80 e0       	ldi	r24, 0x00	; 0
+ 144:	90 e0       	ldi	r25, 0x00	; 0
+ 146:	08 95       	ret
+	if(PINA&0x04) return 0;
+ 148:	80 e0       	ldi	r24, 0x00	; 0
+ 14a:	90 e0       	ldi	r25, 0x00	; 0
+	PORTA = 0x00;
+	
+	return 0;
+}
+ 14c:	08 95       	ret
+
+0000014e <main>:
+
+int main(void)
+{
+ 14e:	cf 93       	push	r28
+ 150:	df 93       	push	r29
+ 152:	cd b7       	in	r28, 0x3d	; 61
+ 154:	de b7       	in	r29, 0x3e	; 62
+ 156:	64 97       	sbiw	r28, 0x14	; 20
+ 158:	0f b6       	in	r0, 0x3f	; 63
+ 15a:	f8 94       	cli
+ 15c:	de bf       	out	0x3e, r29	; 62
+ 15e:	0f be       	out	0x3f, r0	; 63
+ 160:	cd bf       	out	0x3d, r28	; 61
+	int Num[10] ={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
+ 162:	84 e1       	ldi	r24, 0x14	; 20
+ 164:	e0 e0       	ldi	r30, 0x00	; 0
+ 166:	f1 e0       	ldi	r31, 0x01	; 1
+ 168:	de 01       	movw	r26, r28
+ 16a:	11 96       	adiw	r26, 0x01	; 1
+ 16c:	01 90       	ld	r0, Z+
+ 16e:	0d 92       	st	X+, r0
+ 170:	8a 95       	dec	r24
+ 172:	e1 f7       	brne	.-8      	; 0x16c <main+0x1e>
+	DDRA = 0xF8;
+ 174:	88 ef       	ldi	r24, 0xF8	; 248
+ 176:	8a bb       	out	0x1a, r24	; 26
+	DDRD = 0xFF;
+ 178:	8f ef       	ldi	r24, 0xFF	; 255
+ 17a:	81 bb       	out	0x11, r24	; 17
+	
+	while(1){
+		PORTD = Num[KeyScan()];
+ 17c:	9d df       	rcall	.-198    	; 0xb8 <KeyScan>
+ 17e:	88 0f       	add	r24, r24
+ 180:	99 1f       	adc	r25, r25
+ 182:	e1 e0       	ldi	r30, 0x01	; 1
+ 184:	f0 e0       	ldi	r31, 0x00	; 0
+ 186:	ec 0f       	add	r30, r28
+ 188:	fd 1f       	adc	r31, r29
+ 18a:	e8 0f       	add	r30, r24
+ 18c:	f9 1f       	adc	r31, r25
+ 18e:	80 81       	ld	r24, Z
+ 190:	82 bb       	out	0x12, r24	; 18
+ 192:	f4 cf       	rjmp	.-24     	; 0x17c <main+0x2e>
+
+00000194 <_exit>:
+ 194:	f8 94       	cli
+
+00000196 <__stop_program>:
+ 196:	ff cf       	rjmp	.-2      	; 0x196 <__stop_program>
