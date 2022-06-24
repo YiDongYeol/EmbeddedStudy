@@ -28,7 +28,7 @@ int main(void) {
 	unsigned char text[] = "input please\r\n";
 	char str[20]="";
 	unsigned int cnt = 0;
-	DDRE = 0xfe;
+	//DDRE = 0xfe;
 	UCSR0A = 0x00;
 	UCSR0B = 0x18;
 	UCSR0C = 0x06;
